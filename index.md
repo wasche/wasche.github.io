@@ -1,6 +1,10 @@
 ---
 layout: default
-title: kurakin
+title: projects
 ---
 
-Hello, world!
+* [ncss][ncss]
+* [jsdoc-moo][moo]
+
+[ncss]: /ncss
+[moo]: /jsdoc-moo
