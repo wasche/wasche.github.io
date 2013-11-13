@@ -1,4 +1,0 @@
-safe: true
-pygments: true
-lsi: false
-exclude: Makefile, README
