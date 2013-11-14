@@ -6,6 +6,7 @@
     "grunt": "~0.4.1",
     "stylus": "~0.40.2",
     "grunt-contrib-jade": "~0.8.0",
-    "grunt-contrib-stylus": "~0.10.0"
+    "grunt-contrib-stylus": "~0.10.0",
+    "grunt-contrib-watch": "~0.5.3"
   }
 }
