@@ -9,9 +9,7 @@ html(lang=en)
 
     title Wil Asche
 
-    link(rel='stylesheet', href='http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css')
-    //- link(rel='stylesheet', href='http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap-theme.min.css')
-    link(rel='stylesheet', href='carousel.css')
+    link(rel='stylesheet', href='/lib/bootstrap/css/bootstrap.css')
     block styles
 
     // HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
@@ -21,7 +19,10 @@ html(lang=en)
   body
     .container
       block content
+
+    footer
+      p &copy Wil Asche 2013
     
-    script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
-    script(src='http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js')
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js')
+    script(src='/lib/bootstrap/js/bootstrap.js')
     block scripts

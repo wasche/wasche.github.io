@@ -5,7 +5,7 @@ var gulp  = require('gulp')
 
 gulp.task('clean', function(){
   gulp
-    .src('./*.html', {read: false})
+    .src('dist', {read: false})
     .pipe(clean());
 });
 
@@ -13,7 +13,10 @@ gulp.task('build', function(){
   gulp
     .src('src/pages/*.jade')
     .pipe(jade())
-    .pipe(gulp.dest('.'));
+    .pipe(gulp.dest('dist'));
+  gulp
+    .src('./lib/**/*.*', {base: './'})
+    .pipe(gulp.dest('dist'));
 });
 
 gulp.task('watch', function(){
@@ -21,4 +24,3 @@ gulp.task('watch', function(){
 });
 
 gulp.task('default', ['build']);
-

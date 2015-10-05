@@ -1,81 +1,124 @@
 extends ../layout
 
 block content
-  .navbar-wrapper
-    .container
-
-      .navbar.navbar-inverse.navbar-static-top(role='navigation')
-        .container
-          .navbar-header
-            button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
-              span.sr-only Toggle navigation
-              span.icon-bar
-              span.icon-bar
-              span.icon-bar
-            a.navbar-brand(href='#') Wil Asche
-          .navbar-collapse.collapse
-            ul.nav.navbar-nav
-              li.active
-                a(href='#') Home
-              li
-                a(href='#about') About
-              li
-                a(href='#contact') Contact
-              li.dropdown
-                a.dropdown-toggle(href='#', data-toggle='dropdown')
-                  | Projects
-                  b.caret
-                ul.dropdown-menu
-                  li
-                    a(href='#fwd') Fwd
-                  li.divider
-                  li.dropdown-header IRC Bots
-                  li
-                    a(href='#kbot') KBot
-                  li
-                    a(href='#logbot') Logbot
-
-  #carousel.carousel.slide(data-ride='carousel')
-    // indicators
-    ol.carousel-indicators
-      li.active(data-target='#carousel', data-slide-to='0')
-      li(data-target='#carousel', data-slide-to='1')
-      li(data-target='#carousel', data-slide-to='2')
-
-    .carousel-inner
-      .item.active
-        img(data-src='holder.js/900x500/auto/#777:#7a7a7a/text:First slide', alt='First slide')
-        .container
-          .carousel-caption
-            h1 Example headline
-            p sample text goes here
-            p
-              a.btn.btn-lg.btn-primary(href='#', role='button') Learn more
-      .item
-        img(data-src='holder.js/900x500/auto/#777:#7a7a7a/text:Second slide', alt='Second slide')
-        .container
-          .carousel-caption
-            h1 Example headline
-            p sample text goes here
-      .item
-        img(data-src='holder.js/900x500/auto/#777:#7a7a7a/text:Third slide', alt='Third slide')
-        .container
-          .carousel-caption
-            h1 Example headline
-            p sample text goes here
-
-    a.left.carousel-control(href='#carousel', data-slide='prev')
-      span.glyphicon.glyphicon-chevron-left
-    a.right.carousel-control(href='#carousel', data-slide='next')
-      span.glyphicon.glyphicon-chevron-right
-
-    img(src='https://gemnasium.com/wasche/fwd.png')
-    img(src='https://gemnasium.com/wasche/kbot.png')
-    img(src='https://gemnasium.com/wasche/logbot.png')
-    img(src='https://gemnasium.com/wasche/ncss.png')
-    img(src='https://gemnasium.com/wasche/node-vcal.png')
-    img(src='https://gemnasium.com/wasche/overlay-js.png')
-    img(src='https://gemnasium.com/wasche/todo-js.png')
-
-    .footer
-      p &copy Wil Asche 2013
+  table.table.table-hover
+    thead
+      tr
+        th Project
+        th Supported
+        th Build
+        th npm
+        th Dependencies
+    tbody
+      tr
+        td fwd
+        td
+          img(src='https://img.shields.io/badge/project-maintained-brightgreen.svg')
+        td
+        td
+          img(src='https://img.shields.io/badge/version-0.0.5-blue.svg')
+        td
+          img(src='https://img.shields.io/david/wasche/fwd.svg', title='Dependencies')
+      tr
+        td jira-js
+        td
+          img(src='https://img.shields.io/badge/project-maintained-brightgreen.svg')
+        td
+        td
+        td
+          img(src='https://img.shields.io/david/wasche/fwd.svg', title='Dependencies')
+      tr
+        td moment-natural
+        td
+          img(src='https://img.shields.io/badge/project-maintained-brightgreen.svg')
+        td
+        td
+        td
+          img(src='https://img.shields.io/david/wasche/fwd.svg', title='Dependencies')
+      tr
+        td todo-js
+        td
+          img(src='https://img.shields.io/badge/project-maintained-brightgreen.svg')
+        td
+        td
+        td
+          img(src='https://img.shields.io/david/wasche/fwd.svg', title='Dependencies')
+      tr
+        td css-test
+        td
+          img(src='https://img.shields.io/badge/project-maintained-brightgreen.svg')
+      tr
+        td ncss
+        td
+          img(src='https://img.shields.io/badge/project-abandoned-red.svg')
+        td
+        td
+        td
+          img(src='https://img.shields.io/david/wasche/fwd.svg', title='Dependencies')
+      tr
+        td jacss
+        td
+          img(src='https://img.shields.io/badge/project-abandoned-red.svg')
+        td
+          img(src='https://img.shields.io/travis/wasche/jacss.svg', title='Build Status')
+      tr
+        td gocss
+        td
+          img(src='https://img.shields.io/badge/project-abandoned-red.svg')
+      tr
+        td node-easy-auth
+        td
+          img(src='https://img.shields.io/badge/project-maintained-brightgreen.svg')
+        td
+          img(src='https://img.shields.io/travis/wasche/node-easy-auth.svg', title='Build Status')
+        td
+        td
+          img(src='https://img.shields.io/david/wasche/fwd.svg', title='Dependencies')
+      tr
+        td node-easy-config
+        td
+          img(src='https://img.shields.io/badge/project-maintained-brightgreen.svg')
+        td
+        td
+        td
+          img(src='https://img.shields.io/david/wasche/fwd.svg', title='Dependencies')
+      tr
+        td node-vcal
+        td
+          img(src='https://img.shields.io/badge/project-maintained-brightgreen.svg')
+        td
+        td
+        td
+          img(src='https://img.shields.io/david/wasche/fwd.svg', title='Dependencies')
+      tr
+        td widget-calendar
+        td
+          img(src='https://img.shields.io/badge/project-maintained-brightgreen.svg')
+        td
+        td
+        td
+          img(src='https://img.shields.io/david/wasche/fwd.svg', title='Dependencies')
+      tr
+        td logbot
+        td
+          img(src='https://img.shields.io/badge/project-abandoned-red.svg')
+        td
+        td
+        td
+          img(src='https://img.shields.io/david/wasche/fwd.svg', title='Dependencies')
+      tr
+        td kbot
+        td
+          img(src='https://img.shields.io/badge/project-abandoned-red.svg')
+        td
+        td
+        td
+          img(src='https://img.shields.io/david/wasche/fwd.svg', title='Dependencies')
+      tr
+        td overlay-js
+        td
+          img(src='https://img.shields.io/badge/project-maintained-brightgreen.svg')
+        td
+        td
+        td
+          img(src='https://img.shields.io/david/wasche/fwd.svg', title='Dependencies')
